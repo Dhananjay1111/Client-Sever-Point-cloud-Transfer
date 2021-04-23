@@ -8,7 +8,7 @@ async def PCT_pointcloud_loader():
     uri = "ws://localhost:8765"
     async with websockets.connect(uri) as websocket:
         pointcloud_array = []
-        with open(r'X:\Internship\Point Cloud technology\PCT\Strausberg\Strausberg\GUI_trial set\New folder\399000_5829000.csv',newline='') as pointcloud_csv_file:
+        with open(r'Path to the file',newline='') as pointcloud_csv_file:
             import csv
             try:
                 reader = csv.reader(pointcloud_csv_file)
