@@ -8,7 +8,7 @@ async def PCT_pointcloud_processor(websocket, path):
     pointcloud_serialized = await websocket.recv()
     pointcloud_array = pickle.loads(pointcloud_serialized)
     print(f'Data received at server')
-    ####
+    #####
     point_cloud_to_be_processed_array_dataframe = pd.DataFrame(pointcloud_array)
     try:
         point_cloud_to_be_processed_array_dataframe.to_csv("To_be_Predicted_pointcloud.csv", index=False)
